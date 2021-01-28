@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <% if (display_input_form) { %>
+        {
+        <form action="/jsondata" method="POST"><input type="text" name="data"> :
+            <form action="/jsondata" method="POST"><input type="text" name="data">
+                <br>
+                <form action="/jsondata" method="POST"><input type="text" name="data"> :
+                    <form action="/jsondata" method="POST"><input type="text" name="data">
+                        <br>
+                        <form action="/jsondata" method="POST"><input type="text" name="data"> :
+                            <form action="/jsondata" method="POST"><input type="text" name="data">
+                                <br>
+                                <br>
+                                <button type="submit">Submit</button>
+                                }
+                                <% } else { %>
+                                    {
+                                    <br>
+                                    <%= data_arr[0]%> : <%= data_arr[1]%>
+                                            <br>
+                                            <%= data_arr[2]%> : <%= data_arr[3]%>
+                                                    <br>
+                                                    <%= data_arr[4]%> : <%= data_arr[5]%>
+                                                            <br>
+                                                            }
+                                                            <% } %>
+</body>
+
+</html>
